@@ -1,0 +1,119 @@
+.slide {
+	position: absolute;
+	z-index: 2;
+	border: 6px solid #ddd;
+	background-color: #333;
+}
+.slide-text .content {
+	background-color: #333;
+}
+.slide-text h1  {
+	position: absolute;
+	font-size: 2.0em;
+	overflow: hidden;
+	margin: 0;
+	padding: 0.2em;
+	text-align: center;
+	display: table;
+	color: #ddd;
+	font-weight: bold;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.slide-text h1 span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.slide .content {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+.slide-text .details h4 {
+	text-align: center;
+}
+.slide-notice .author {
+	font-size: 1em;
+	text-align: center;
+}
+.slide .details {
+	color: black;
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	z-index: 99;
+	font-size: 0.5em;
+}
+.variant0 .details {
+	bottom: 0em;
+	left: 0em;
+}
+.variant1 .details {
+	top: 0em;
+	left: 0em;
+}
+.variant2 .details {
+	top: 0em;
+	right: 0em;
+}
+.variant3 .details {
+	bottom: 0em;
+	right: 0em;
+}
+.slide .details .hashtags li {
+	float: left;
+	margin: 0;
+}
+
+.hashtags li, .tag {
+	background-color: white;
+	opacity: 0.7;
+	padding: 0.2em;
+	border-radius: 0.3em;
+	margin: 0.5em;
+}
+.slide .details .icon-social-sm {
+	margin: 0;
+}
+.presentation img.preload {
+	position: absolute;
+	top: -10000px;
+}
+.presentation > .hashtags {
+	z-index: 10;
+}
+
+@media only screen and (min-width : 1300px) {
+	.slide .content {
+		width: 625px;
+		height: 625px;
+	}
+	.slide {
+		font-size: 3.0em;
+	}
+}
+
+@media only screen and (min-width : 960px) {
+	.slide .content {
+		width: 480px;
+		height: 480px;
+	}
+	.slide {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width : 500px) {
+	.slide {
+		border: 2px solid #ddd;
+	}
+	.slide .content {
+		width: 150px;
+		height: 150px;
+	}
+	.slide {
+		font-size: 1em;
+	}
+	.slide h1 {
+		font-size: 1.5em;
+	}
+}
